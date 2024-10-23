@@ -1,8 +1,6 @@
 ## Olá! Sou o Gabriel Cortez
 ![Gabriel Cortez Git](https://github-readme-stats.vercel.app/api?username=gabrielcortezspr&theme=dark&show_icons=true)
 
-##### Contatos:
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabrielcortez0/)[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gabrielcortezspr@gmail.com)
 
 ## Tecnologias que eu uso no meu dia
 
@@ -11,6 +9,7 @@
 
 
 ## Sobre mim
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabrielcortez0/) [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gabrielcortezspr@gmail.com)
+
 💻 Atualmente, sou graduando em Engenharia de Computação na Universidade do Estado do Amazonas (EST/UEA). Estou sempre em busca de aprender mais e utilizo este repositório Git como uma ferramenta para organizar e direcionar meus estudos em programação
-
-

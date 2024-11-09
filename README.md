@@ -9,7 +9,7 @@
 ###
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gabrielcortezspr&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false&order=1&custom_title=My%20Stats" height="170.5" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api?username=gabrielcortezspr&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false&order=1&custom_title=My%20Stats" height="170.5" alt="stats graph"  />
   <img src="https://streak-stats.demolab.com?user=gabrielcortezspr&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="170" alt="streak graph"  />
   <br>
 <br>

@@ -57,3 +57,7 @@
 ###
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=77F289&height=120&section=footer"/>
+
+
+[![Visitantes](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/seu-username&title=Visualizações&edge_flat=false)](https://github.com/gabrielcortezspr)
+

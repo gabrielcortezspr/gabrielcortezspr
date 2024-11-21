@@ -19,21 +19,6 @@
 
 ###
 
-<h2 align="center">Social Media</h2>
-
-###
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/gabrielcortez0/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="mailto:gabrielcortezspr@gmail.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
-  </a>
-</div>
-
-###
-
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=77F289&height=120&section=footer"/>
 
 

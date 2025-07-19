@@ -1,30 +1,18 @@
-### Olá, eu sou o Gabriel Cortez 👋
+<img align='right' src="https://github-readme-stats.vercel.app/api?username=gabrielcortezspr&show_icons=true&title_color=FFFFFF&text_color=F0DBB6&icon_color=F0DBB6&bg_color=3C6F53&cache_seconds=2300" alt="ilustração do status do github">
 
-Sou estudante de **Engenharia de Computação** e estagiário de **Quality Assurance (QA)** no **SIDIA Instituto de Ciência e Tecnologia**.  
-Tenho interesse em garantir a qualidade de software por meio de **testes manuais e automatizados**, sempre buscando entender como as coisas funcionam por dentro.  
-Adoro aprender e contribuir com projetos que impactam pessoas de verdade.
+<img align='top' src="https://img.shields.io/static/v1?label=Overview&message=gabrielcortezspr&color=3C6F53&style=for-the-badge&logo=GitHub" alt="Static GitHub">
 
+### Hello, my name is Gabriel Cortez!
+
+
+###### I’m a QA Analyst with a strong background in Embedded Systems and Full Stack Development.
+
+
+###### Currently working at SIDIA
 ---
 
-### 🧰 Tecnologias e Ferramentas
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
-![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=java&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
----
-
-### 📊 GitHub Stats
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=gabrielcortezspr&layout=compact&theme=radical)
-
----
-
-### 🤝 Vamos nos conectar?
+### Let’s connect and share ideas!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabrielcortezspr/)
+[![Gmail Badge](https://img.shields.io/badge/-gabrielcortezspr@gmail.com-006bed?style=flat-square&logo=Gmail&logoColor=white&link=mailto:gabrielcortezspr@gmail.com)](mailto:gabrielcortezspr@gmail.com)
+[![GitHub](https://img.shields.io/github/followers/gabrielcortezspr?label=follow&style=social)](https://github.com/gabrielcortezspr)

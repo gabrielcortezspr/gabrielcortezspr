@@ -60,5 +60,7 @@ $ cat expertise.txt
 <div align="center">
   <img src="assets/footer.svg" width="100%" alt="1-0 · good game" />
   <br><br>
-  <i>"I consider an elegant piece of code or a beautifully designed circuit board to be as much of a work of art as a painting or a poem."</i> — Steve Wozniak
+  <i>"I consider an elegant piece of code or a beautifully designed circuit board to be as much of a work of art as a painting or a poem."</i>
+  <br><br>
+  — Steve Wozniak
 </div>

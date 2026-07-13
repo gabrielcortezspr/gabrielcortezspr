@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.svg" width="100%" alt="Gabriel Cortez — software engineer · ai · automation · data" />
+  <img src="assets/banners.svg" width="100%" alt="Gabriel Cortez — software engineer · ai · automation · data" />
 </div>
 
 ### `$ whoami`

@@ -1,0 +1,133 @@
+<svg width="900" height="470" viewBox="0 0 900 470" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace">
+  <!-- stack.board — tabuleiro digital da tech stack (gerado por gen_stack_board.py) -->
+  <defs>
+    <filter id="marble" x="-40%" y="-40%" width="180%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.013 0.02" numOctaves="2" seed="12"/>
+      <feDisplacementMap in="SourceGraphic" scale="45" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <g id="bloom" fill="none" stroke="#f2f2f2">
+      <circle r="4" stroke-width="1.1" stroke-opacity="0.45"/>
+      <circle r="9" stroke-width="0.5" stroke-opacity="0.42"/>
+      <circle r="15" stroke-width="1.1" stroke-opacity="0.38"/>
+      <circle r="23" stroke-width="0.5" stroke-opacity="0.35"/>
+      <circle r="32" stroke-width="1.1" stroke-opacity="0.32"/>
+      <circle r="42" stroke-width="0.5" stroke-opacity="0.28"/>
+      <circle r="54" stroke-width="1.1" stroke-opacity="0.25"/>
+      <circle r="66" stroke-width="0.5" stroke-opacity="0.22"/>
+      <circle r="80" stroke-width="1.1" stroke-opacity="0.18"/>
+      <circle r="94" stroke-width="0.5" stroke-opacity="0.15"/>
+      <circle r="110" stroke-width="1.1" stroke-opacity="0.12"/>
+      <circle r="126" stroke-width="0.5" stroke-opacity="0.08"/>
+    </g>
+    <pattern id="scan" x="0" y="0" width="4" height="3" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.02"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="470" fill="#0a0a0a"/>
+
+  <!-- tinta suminagashi no canto -->
+  <g filter="url(#marble)" opacity="0.5">
+    <g transform="translate(858 38)">
+      <animateTransform attributeName="transform" type="rotate" additive="sum" from="0" to="360" dur="150s" repeatCount="indefinite"/>
+      <use xlink:href="#bloom"/>
+    </g>
+  </g>
+  <g filter="url(#marble)" opacity="0.35">
+    <g transform="translate(40 448)">
+      <animateTransform attributeName="transform" type="rotate" additive="sum" from="360" to="0" dur="180s" repeatCount="indefinite"/>
+      <use xlink:href="#bloom"/>
+    </g>
+  </g>
+
+  <text x="40" y="42" font-size="15" fill="#8a8a8a"><tspan fill="#4f4f4f">$ </tspan>cat stack.board</text>
+
+  <!-- casas do tabuleiro -->
+  <g>
+    <rect x="130" y="70" width="146" height="84" fill="#151515" stroke="#262626"/>
+    <rect x="276" y="70" width="146" height="84" fill="#0f0f0f" stroke="#262626"/>
+    <rect x="422" y="70" width="146" height="84" fill="#151515" stroke="#262626"/>
+    <rect x="568" y="70" width="146" height="84" fill="#0f0f0f" stroke="#262626"/>
+    <rect x="714" y="70" width="146" height="84" fill="#151515" stroke="#262626"/>
+    <rect x="130" y="154" width="146" height="84" fill="#0f0f0f" stroke="#262626"/>
+    <rect x="276" y="154" width="146" height="84" fill="#151515" stroke="#262626"/>
+    <rect x="422" y="154" width="146" height="84" fill="#0f0f0f" stroke="#262626"/>
+    <rect x="568" y="154" width="146" height="84" fill="#151515" stroke="#262626"/>
+    <rect x="714" y="154" width="146" height="84" fill="#0f0f0f" stroke="#262626"/>
+    <rect x="130" y="238" width="146" height="84" fill="#151515" stroke="#262626"/>
+    <rect x="276" y="238" width="146" height="84" fill="#0f0f0f" stroke="#262626"/>
+    <rect x="422" y="238" width="146" height="84" fill="#151515" stroke="#262626"/>
+    <rect x="568" y="238" width="146" height="84" fill="#0f0f0f" stroke="#262626"/>
+    <rect x="714" y="238" width="146" height="84" fill="#151515" stroke="#262626"/>
+    <rect x="130" y="322" width="146" height="84" fill="#0f0f0f" stroke="#262626"/>
+    <rect x="276" y="322" width="146" height="84" fill="#151515" stroke="#262626"/>
+    <rect x="422" y="322" width="146" height="84" fill="#0f0f0f" stroke="#262626"/>
+    <rect x="568" y="322" width="146" height="84" fill="#151515" stroke="#262626"/>
+    <rect x="714" y="322" width="146" height="84" fill="#0f0f0f" stroke="#262626"/>
+  </g>
+
+  <!-- nomes -->
+  <g font-size="15" letter-spacing="2" fill="#d6d6d6" text-anchor="middle">
+    <text x="203" y="117">PYTHON</text>
+    <text x="349" y="117">TYPESCRIPT</text>
+    <text x="495" y="117">JAVASCRIPT</text>
+    <text x="641" y="117">JAVA</text>
+    <text x="787" y="117">SQL</text>
+    <text x="203" y="201">REACT</text>
+    <text x="349" y="201">NEXT.JS</text>
+    <text x="495" y="201">FASTAPI</text>
+    <text x="641" y="201">NODE.JS</text>
+    <text x="787" y="201">HTML·CSS</text>
+    <text x="203" y="285">PANDAS</text>
+    <text x="349" y="285">NUMPY</text>
+    <text x="495" y="285" font-size="13">SCIKIT-LEARN</text>
+    <text x="641" y="285">OPENCV</text>
+    <text x="787" y="285">ML</text>
+    <text x="203" y="369">SELENIUM</text>
+    <text x="349" y="369">PLAYWRIGHT</text>
+    <text x="495" y="369">RPA</text>
+    <text x="641" y="369">POSTGRESQL</text>
+    <text x="787" y="369">GIT·LINUX</text>
+  </g>
+
+  <!-- varredura: casas acendem em sequência -->
+  <g fill="#f2f2f2">
+    <rect x="130" y="70" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.01;0.022;0.055;1"/></rect>
+    <rect x="276" y="70" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.059;0.071;0.104;1"/></rect>
+    <rect x="422" y="70" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.108;0.12;0.153;1"/></rect>
+    <rect x="568" y="70" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.157;0.169;0.202;1"/></rect>
+    <rect x="714" y="70" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.206;0.218;0.251;1"/></rect>
+    <rect x="130" y="154" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.255;0.267;0.3;1"/></rect>
+    <rect x="276" y="154" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.304;0.316;0.349;1"/></rect>
+    <rect x="422" y="154" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.353;0.365;0.398;1"/></rect>
+    <rect x="568" y="154" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.402;0.414;0.447;1"/></rect>
+    <rect x="714" y="154" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.451;0.463;0.496;1"/></rect>
+    <rect x="130" y="238" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.5;0.512;0.545;1"/></rect>
+    <rect x="276" y="238" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.549;0.561;0.594;1"/></rect>
+    <rect x="422" y="238" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.598;0.61;0.643;1"/></rect>
+    <rect x="568" y="238" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.647;0.659;0.692;1"/></rect>
+    <rect x="714" y="238" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.696;0.708;0.741;1"/></rect>
+    <rect x="130" y="322" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.745;0.757;0.79;1"/></rect>
+    <rect x="276" y="322" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.794;0.806;0.839;1"/></rect>
+    <rect x="422" y="322" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.843;0.855;0.888;1"/></rect>
+    <rect x="568" y="322" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.892;0.904;0.937;1"/></rect>
+    <rect x="714" y="322" width="146" height="84" opacity="0"><animate attributeName="opacity" dur="14s" repeatCount="indefinite" values="0;0;0.13;0;0" keyTimes="0;0.941;0.953;0.986;1"/></rect>
+  </g>
+
+  <g font-size="10" fill="#4a4a4a">
+    <text x="116" y="115" text-anchor="end">lang</text>
+    <text x="116" y="199" text-anchor="end">web</text>
+    <text x="116" y="283" text-anchor="end">data·ai</text>
+    <text x="116" y="367" text-anchor="end">auto·infra</text>
+    <text x="203" y="426" text-anchor="middle">a</text>
+    <text x="349" y="426" text-anchor="middle">b</text>
+    <text x="495" y="426" text-anchor="middle">c</text>
+    <text x="641" y="426" text-anchor="middle">d</text>
+    <text x="787" y="426" text-anchor="middle">e</text>
+  </g>
+
+  <text x="40" y="452" font-size="11" fill="#4a4a4a">20/20 modules loaded · no bad moves detected</text>
+
+  <rect width="900" height="470" fill="url(#scan)"/>
+  <rect x="0.5" y="0.5" width="899" height="469" fill="none" stroke="#222222"/>
+</svg>

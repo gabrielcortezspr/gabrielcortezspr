@@ -1,97 +1,159 @@
-<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
-  <!-- ══════════════════════════════════════════════════
-       PERSONALIZE AQUI:
-       - Cores: troque os valores em <style> abaixo
-       - Nome/título: procure os <text> no final
-       ══════════════════════════════════════════════════ -->
-  <style>
-    .bg      { fill: #0d1117; }
-    .sq-dark { fill: #161b22; }
-    .sq-lite { fill: #21262d; }
-    .accent  { fill: #d4a017; }
-    .name    { font: 700 42px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #e6edf3; letter-spacing: 2px; }
-    .subtitle{ font: 400 16px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #8b949e; letter-spacing: 4px; }
-    .piece   { font: 400 46px serif; fill: #d4a017; }
-    .piece-dim { font: 400 34px serif; fill: #30363d; }
-  </style>
-
-  <!-- fundo -->
-  <rect class="bg" width="900" height="220"/>
-
-  <!-- tabuleiro sutil à esquerda -->
-  <g opacity="0.9">
-    <rect class="sq-lite" x="0"   y="0"   width="55" height="55"/>
-    <rect class="sq-dark" x="55"  y="0"   width="55" height="55"/>
-    <rect class="sq-lite" x="110" y="0"   width="55" height="55"/>
-    <rect class="sq-dark" x="165" y="0"   width="55" height="55"/>
-    <rect class="sq-dark" x="0"   y="55"  width="55" height="55"/>
-    <rect class="sq-lite" x="55"  y="55"  width="55" height="55"/>
-    <rect class="sq-dark" x="110" y="55"  width="55" height="55"/>
-    <rect class="sq-lite" x="165" y="55"  width="55" height="55"/>
-    <rect class="sq-lite" x="0"   y="110" width="55" height="55"/>
-    <rect class="sq-dark" x="55"  y="110" width="55" height="55"/>
-    <rect class="sq-lite" x="110" y="110" width="55" height="55"/>
-    <rect class="sq-dark" x="165" y="110" width="55" height="55"/>
-    <rect class="sq-dark" x="0"   y="165" width="55" height="55"/>
-    <rect class="sq-lite" x="55"  y="165" width="55" height="55"/>
-    <rect class="sq-dark" x="110" y="165" width="55" height="55"/>
-    <rect class="sq-lite" x="165" y="165" width="55" height="55"/>
-  </g>
-
-  <!-- tabuleiro sutil à direita (espelhado) -->
-  <g opacity="0.9">
-    <rect class="sq-dark" x="680" y="0"   width="55" height="55"/>
-    <rect class="sq-lite" x="735" y="0"   width="55" height="55"/>
-    <rect class="sq-dark" x="790" y="0"   width="55" height="55"/>
-    <rect class="sq-lite" x="845" y="0"   width="55" height="55"/>
-    <rect class="sq-lite" x="680" y="55"  width="55" height="55"/>
-    <rect class="sq-dark" x="735" y="55"  width="55" height="55"/>
-    <rect class="sq-lite" x="790" y="55"  width="55" height="55"/>
-    <rect class="sq-dark" x="845" y="55"  width="55" height="55"/>
-    <rect class="sq-dark" x="680" y="110" width="55" height="55"/>
-    <rect class="sq-lite" x="735" y="110" width="55" height="55"/>
-    <rect class="sq-dark" x="790" y="110" width="55" height="55"/>
-    <rect class="sq-lite" x="845" y="110" width="55" height="55"/>
-    <rect class="sq-lite" x="680" y="165" width="55" height="55"/>
-    <rect class="sq-dark" x="735" y="165" width="55" height="55"/>
-    <rect class="sq-lite" x="790" y="165" width="55" height="55"/>
-    <rect class="sq-dark" x="845" y="165" width="55" height="55"/>
-  </g>
-
-  <!-- degradê para o centro (funde o tabuleiro no fundo) -->
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace">
+  <!-- ═══════════════════════════════════════════════════════
+       banner — xadrez digital × suminagashi
+       paleta: #0a0a0a fundo · #f2f2f2 tinta · cinzas
+       ═══════════════════════════════════════════════════════ -->
   <defs>
-    <linearGradient id="fadeL" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0d1117" stop-opacity="0"/>
-      <stop offset="1" stop-color="#0d1117" stop-opacity="1"/>
+    <!-- marmorização: turbulência distorce os anéis de tinta -->
+    <filter id="marble" x="-40%" y="-40%" width="180%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.019" numOctaves="2" seed="8" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="55" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <!-- anéis concêntricos de tinta (suminagashi) -->
+    <g id="bloom" fill="none" stroke="#f2f2f2">
+      <circle r="5"   stroke-width="1.3" stroke-opacity="0.55"/>
+      <circle r="9"   stroke-width="0.7" stroke-opacity="0.50"/>
+      <circle r="16"  stroke-width="1.2" stroke-opacity="0.46"/>
+      <circle r="22"  stroke-width="0.6" stroke-opacity="0.42"/>
+      <circle r="31"  stroke-width="1.1" stroke-opacity="0.38"/>
+      <circle r="38"  stroke-width="0.6" stroke-opacity="0.35"/>
+      <circle r="47"  stroke-width="1.0" stroke-opacity="0.32"/>
+      <circle r="55"  stroke-width="0.6" stroke-opacity="0.29"/>
+      <circle r="66"  stroke-width="1.0" stroke-opacity="0.26"/>
+      <circle r="74"  stroke-width="0.5" stroke-opacity="0.24"/>
+      <circle r="85"  stroke-width="0.9" stroke-opacity="0.21"/>
+      <circle r="95"  stroke-width="0.5" stroke-opacity="0.19"/>
+      <circle r="107" stroke-width="0.9" stroke-opacity="0.17"/>
+      <circle r="118" stroke-width="0.5" stroke-opacity="0.15"/>
+      <circle r="131" stroke-width="0.8" stroke-opacity="0.13"/>
+      <circle r="143" stroke-width="0.5" stroke-opacity="0.11"/>
+      <circle r="157" stroke-width="0.8" stroke-opacity="0.10"/>
+      <circle r="170" stroke-width="0.4" stroke-opacity="0.08"/>
+      <circle r="184" stroke-width="0.7" stroke-opacity="0.07"/>
+      <circle r="198" stroke-width="0.4" stroke-opacity="0.06"/>
+    </g>
+
+    <!-- tabuleiro: casas claras alternadas -->
+    <pattern id="checker" x="616" y="24" width="56" height="56" patternUnits="userSpaceOnUse">
+      <rect x="0"  y="0"  width="28" height="28" fill="#141414"/>
+      <rect x="28" y="28" width="28" height="28" fill="#141414"/>
+    </pattern>
+
+    <!-- scanlines (textura CRT sutil) -->
+    <pattern id="scan" x="0" y="0" width="4" height="3" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.02"/>
+    </pattern>
+
+    <!-- máscara de digitação do nome -->
+    <clipPath id="typeclip">
+      <rect x="258" y="116" height="46" width="0">
+        <animate attributeName="width" calcMode="discrete" dur="9s" repeatCount="indefinite"
+          values="0;23.6;47.1;70.7;94.3;117.9;141.4;165;188.6;212.1;235.7;259.3;282.9;306.4;330;330"
+          keyTimes="0;0.017;0.033;0.05;0.067;0.083;0.1;0.117;0.133;0.15;0.167;0.183;0.2;0.217;0.233;1"/>
+      </rect>
+    </clipPath>
+
+    <!-- funde a tinta no fundo antes da zona de texto -->
+    <linearGradient id="inkfade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a0a0a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0a0a0a" stop-opacity="1"/>
     </linearGradient>
-    <linearGradient id="fadeR" x1="1" y1="0" x2="0" y2="0">
-      <stop offset="0" stop-color="#0d1117" stop-opacity="0"/>
-      <stop offset="1" stop-color="#0d1117" stop-opacity="1"/>
+
+    <!-- funde a borda esquerda do grid no fundo -->
+    <linearGradient id="gridfade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a0a0a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#0a0a0a" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect x="0"   y="0" width="240" height="220" fill="url(#fadeL)"/>
-  <rect x="660" y="0" width="240" height="220" fill="url(#fadeR)"/>
 
-  <!-- peças decorativas apagadas nos tabuleiros -->
-  <text class="piece-dim" x="70"  y="45">♜</text>
-  <text class="piece-dim" x="125" y="100">♞</text>
-  <text class="piece-dim" x="15"  y="155">♟</text>
-  <text class="piece-dim" x="805" y="45">♝</text>
-  <text class="piece-dim" x="750" y="155">♛</text>
-  <text class="piece-dim" x="858" y="210">♟</text>
+  <!-- fundo -->
+  <rect width="900" height="280" fill="#0a0a0a"/>
 
-  <!-- peça central de destaque -->
-  <text class="piece" x="427" y="72" text-anchor="middle">♞</text>
+  <!-- tinta suminagashi (a rotação lenta sob o ruído estático faz a tinta "respirar") -->
+  <g filter="url(#marble)" opacity="0.8">
+    <g transform="translate(120 140)">
+      <animateTransform attributeName="transform" type="rotate" additive="sum"
+        from="0" to="360" dur="120s" repeatCount="indefinite"/>
+      <use xlink:href="#bloom"/>
+    </g>
+  </g>
+  <rect x="170" y="0" width="270" height="280" fill="url(#inkfade)"/>
 
-  <!-- linha de acento -->
-  <rect class="accent" x="330" y="90" width="240" height="2" rx="1"/>
+  <!-- ── tabuleiro digital 8×8 (616,24 → 840,248 · casa 28px) ── -->
+  <g>
+    <rect x="616" y="24" width="224" height="224" fill="url(#checker)"/>
+    <path stroke="#262626" stroke-width="1" opacity="0.8" d="M616 24V248 M644 24V248 M672 24V248 M700 24V248 M728 24V248 M756 24V248 M784 24V248 M812 24V248 M840 24V248 M616 24H840 M616 52H840 M616 80H840 M616 108H840 M616 136H840 M616 164H840 M616 192H840 M616 220H840 M616 248H840"/>
 
-  <!-- NOME (troque aqui) -->
-  <text class="name" x="450" y="140" text-anchor="middle">GABRIEL CORTEZ</text>
+    <!-- casas visitadas pulsam quando o cavalo chega -->
+    <g fill="#f2f2f2">
+      <rect x="644" y="24"  width="28" height="28"><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;0.32;0.07;0" keyTimes="0;0.05;0.07;0.25;1"/></rect>
+      <rect x="672" y="80"  width="28" height="28"><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;0.32;0.07;0" keyTimes="0;0.133;0.153;0.333;1"/></rect>
+      <rect x="728" y="108" width="28" height="28"><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;0.32;0.07;0" keyTimes="0;0.217;0.237;0.417;1"/></rect>
+      <rect x="700" y="164" width="28" height="28"><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;0.32;0.07;0" keyTimes="0;0.3;0.32;0.5;1"/></rect>
+      <rect x="756" y="192" width="28" height="28"><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;0.32;0.07;0" keyTimes="0;0.383;0.403;0.583;1"/></rect>
+      <rect x="784" y="136" width="28" height="28"><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;0.32;0.07;0" keyTimes="0;0.467;0.487;0.667;1"/></rect>
+      <rect x="812" y="80"  width="28" height="28"><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;0.32;0.07;0" keyTimes="0;0.55;0.57;0.75;1"/></rect>
+    </g>
 
-  <!-- SUBTÍTULO (troque aqui) -->
-  <text class="subtitle" x="450" y="172" text-anchor="middle">SOFTWARE ENGINEER · AUTOMATION · AI</text>
+    <!-- percurso do cavalo, desenhado em L (halo + traço) -->
+    <path fill="none" stroke="#f2f2f2" stroke-width="4" stroke-opacity="0.12"
+      d="M658 38 H686 V94 H742 V122 H714 V178 H770 V206 H798 V150 H826 V94"
+      stroke-dasharray="504" stroke-dashoffset="504">
+      <animate attributeName="stroke-dashoffset" dur="12s" repeatCount="indefinite" values="504;504;0;0" keyTimes="0;0.05;0.55;1"/>
+    </path>
+    <path fill="none" stroke="#e8e8e8" stroke-width="1.5" stroke-opacity="0.85"
+      d="M658 38 H686 V94 H742 V122 H714 V178 H770 V206 H798 V150 H826 V94"
+      stroke-dasharray="504" stroke-dashoffset="504">
+      <animate attributeName="stroke-dashoffset" dur="12s" repeatCount="indefinite" values="504;504;0;0" keyTimes="0;0.05;0.55;1"/>
+    </path>
 
-  <!-- notação decorativa -->
-  <text class="subtitle" x="450" y="200" text-anchor="middle" opacity="0.5">1. e4  e5   2. Nf3  Nc6   3. Bb5</text>
+    <rect x="616" y="24" width="60" height="224" fill="url(#gridfade)"/>
+
+    <!-- coordenadas -->
+    <g font-size="9" fill="#4a4a4a">
+      <text x="630" y="262" text-anchor="middle">a</text>
+      <text x="658" y="262" text-anchor="middle">b</text>
+      <text x="686" y="262" text-anchor="middle">c</text>
+      <text x="714" y="262" text-anchor="middle">d</text>
+      <text x="742" y="262" text-anchor="middle">e</text>
+      <text x="770" y="262" text-anchor="middle">f</text>
+      <text x="798" y="262" text-anchor="middle">g</text>
+      <text x="826" y="262" text-anchor="middle">h</text>
+      <text x="852" y="41"  text-anchor="start">8</text>
+      <text x="852" y="69"  text-anchor="start">7</text>
+      <text x="852" y="97"  text-anchor="start">6</text>
+      <text x="852" y="125" text-anchor="start">5</text>
+      <text x="852" y="153" text-anchor="start">4</text>
+      <text x="852" y="181" text-anchor="start">3</text>
+      <text x="852" y="209" text-anchor="start">2</text>
+      <text x="852" y="237" text-anchor="start">1</text>
+    </g>
+  </g>
+
+  <!-- ── zona de texto (terminal) ── -->
+  <text x="260" y="104" font-size="15" fill="#6f6f6f"><tspan fill="#4f4f4f">$ </tspan>whoami</text>
+
+  <text x="260" y="152" font-size="38" font-weight="700" fill="#f2f2f2"
+    textLength="330" lengthAdjust="spacingAndGlyphs" clip-path="url(#typeclip)">GABRIEL CORTEZ</text>
+
+  <!-- cursor bloco: acompanha a digitação e pisca -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete" dur="9s" repeatCount="indefinite"
+      values="0 0;23.6 0;47.1 0;70.7 0;94.3 0;117.9 0;141.4 0;165 0;188.6 0;212.1 0;235.7 0;259.3 0;282.9 0;306.4 0;330 0;330 0"
+      keyTimes="0;0.017;0.033;0.05;0.067;0.083;0.1;0.117;0.133;0.15;0.167;0.183;0.2;0.217;0.233;1"/>
+    <rect x="266" y="124" width="13" height="30" fill="#f2f2f2">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <text x="260" y="190" font-size="13" letter-spacing="1.5" fill="#9a9a9a">software engineer · ai · automation · data
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" values="0;0;1;1" keyTimes="0;0.24;0.31;1"/>
+  </text>
+
+  <text x="260" y="224" font-size="12" fill="#3f3f3f">1. e4 e5  2. Nf3 Nc6  3. Bb5</text>
+
+  <!-- textura + borda -->
+  <rect width="900" height="280" fill="url(#scan)"/>
+  <rect x="0.5" y="0.5" width="899" height="279" fill="none" stroke="#222222"/>
 </svg>

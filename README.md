@@ -1,106 +1,64 @@
 <div align="center">
-  <img src="https://img.shields.io/static/v1?label=Overview&message=Gabriel%20Cortez&color=4C4C6D&style=for-the-badge&logo=github&logoColor=white" alt="GitHub Overview" />
-
-  <h2>👋 Hi, I'm <strong>Gabriel Cortez</strong></h2>
-  <p>🚀 Software Engineer Intern @ Samsung Electronics (VD)</p>
-  <p>🤖 Automation • Data Engineering • AI Solutions • Full Stack Development</p>
+  <img src="assets/banner.svg" width="100%" alt="Gabriel Cortez — software engineer · ai · automation · data" />
 </div>
 
----
+### `$ whoami`
 
-### 🧠 About Me
+Software Engineer at **Samsung Electronics (Visual Display Division)** and Computer Engineering student — building automation solutions, AI-powered applications and data-driven systems that support manufacturing and business operations.
 
-I'm a Computer Engineering student passionate about building solutions that combine software engineering, artificial intelligence, data analytics and process automation.
+Also co-founder of **Kacto Services**, an AI startup focused on intelligent customer service automation.
 
-Currently, I work at Samsung Electronics (Visual Display Division), developing internal solutions that improve manufacturing operations, automate business processes and leverage AI to solve real-world challenges.
+```text
+$ cat expertise.txt
+[x] software engineering          [x] machine learning
+[x] ai & intelligent agents       [x] process automation (rpa)
+[x] data engineering & analytics  [x] full stack development
+[x] manufacturing analytics       [x] enterprise systems integration
+```
 
-* 🚀 Software Engineer Intern at Samsung Electronics (VD)
-* 🤖 Building AI-powered applications and intelligent agents with Samsung Gauss
-* 📊 Working with Data Engineering, Analytics and Predictive Modeling
-* ⚙️ Developing RPA solutions and enterprise automation systems
-* 💻 Building Full Stack applications using React, Next.js and FastAPI
-* 🏭 Analyzing production line data and supporting process improvement initiatives
-* 🎯 Passionate about Automation, Artificial Intelligence and Software Engineering
+<div align="center">
+  <img src="assets/divider.svg" width="100%" alt="" />
+</div>
 
----
+### `$ cat stack.board`
 
-### ⚡ Tech Stack
+<div align="center">
+  <img src="assets/stack-board.svg" width="100%" alt="Tech stack: Python, TypeScript, JavaScript, Java, SQL, React, Next.js, FastAPI, Node.js, HTML/CSS, Pandas, NumPy, Scikit-Learn, OpenCV, ML, Selenium, Playwright, RPA, PostgreSQL, Git/Linux" />
+</div>
+
+<div align="center">
+  <img src="assets/divider.svg" width="100%" alt="" />
+</div>
+
+### `$ tail -f current.log`
+
+```text
+[ai]      integrating enterprise systems with samsung gauss ai services
+[agents]  building intelligent agents for internal operations
+[rpa]     developing python automation for manufacturing processes
+[data]    production analytics · predictive modeling · data pipelines
+[web]     full stack applications — react · next.js · fastapi
+[kacto]   intelligent customer service automation @ kacto services
+```
+
+<div align="center">
+  <img src="assets/divider.svg" width="100%" alt="" />
+</div>
+
+### `$ ping gabriel`
 
 <div align="center">
 
-#### Languages
-
-<img src="https://skillicons.dev/icons?i=python,js,ts,java" />
-
-#### Frontend
-
-<img src="https://skillicons.dev/icons?i=react,nextjs,html,css" />
-
-#### Backend
-
-<img src="https://skillicons.dev/icons?i=fastapi,nodejs" />
-
-#### Data Science & AI
-
-<img src="https://skillicons.dev/icons?i=python" />
-
-<br>
-
-**Pandas • NumPy • Scikit-Learn • OpenCV**
-
-#### Databases
-
-<img src="https://skillicons.dev/icons?i=mysql,postgresql" />
-
-<br>
-
-**SQL Server • MySQL • PostgreSQL**
-
-#### Automation & Tools
-
-<img src="https://skillicons.dev/icons?i=selenium,git,github,vscode,linux" />
-
-<br>
-
-**Playwright • PyAutoGUI • RPA Development**
+<a href="https://www.linkedin.com/in/gabrielcortezspr/" target="_blank"><img src="https://img.shields.io/badge/linkedin-141414?style=flat-square&logo=linkedin&logoColor=f2f2f2" alt="LinkedIn" /></a>
+<a href="mailto:gabrielcortezspr@gmail.com" target="_blank"><img src="https://img.shields.io/badge/email-141414?style=flat-square&logo=gmail&logoColor=f2f2f2" alt="Email" /></a>
+<a href="https://github.com/gabrielcortezspr" target="_blank"><img src="https://img.shields.io/badge/github-141414?style=flat-square&logo=github&logoColor=f2f2f2" alt="GitHub" /></a>
 
 </div>
 
----
-
-### 🚀 What I'm Working On
-
-* 🤖 AI-powered solutions using Samsung Gauss
-* 📈 Predictive models for operational and business insights
-* ⚙️ Process automation and RPA development
-* 🌐 Full Stack web applications
-* 🏭 Manufacturing analytics and production optimization
-* 📊 Data pipelines and intelligent reporting systems
-
----
-
-### 🌍 Let's Connect
+<br>
 
 <div align="center">
-
-<a href="https://www.linkedin.com/in/gabrielcortezspr/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-
-<a href="mailto:gabrielcortezspr@gmail.com" target="_blank">
-  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-</a>
-
-<a href="https://github.com/gabrielcortezspr" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-</a>
-
-</div>
-
----
-
-<div align="center">
-  <i>"Clean code always looks like it was written by someone who cares."</i>
-  <br>
-  <b>Robert C. Martin</b>
+  <img src="assets/footer.svg" width="100%" alt="1-0 · good game" />
+  <br><br>
+  <i>"I consider an elegant piece of code or a beautifully designed circuit board to be as much of a work of art as a painting or a poem."</i> — Steve Wozniak
 </div>

@@ -1,0 +1,97 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- ══════════════════════════════════════════════════
+       PERSONALIZE AQUI:
+       - Cores: troque os valores em <style> abaixo
+       - Nome/título: procure os <text> no final
+       ══════════════════════════════════════════════════ -->
+  <style>
+    .bg      { fill: #0d1117; }
+    .sq-dark { fill: #161b22; }
+    .sq-lite { fill: #21262d; }
+    .accent  { fill: #d4a017; }
+    .name    { font: 700 42px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #e6edf3; letter-spacing: 2px; }
+    .subtitle{ font: 400 16px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #8b949e; letter-spacing: 4px; }
+    .piece   { font: 400 46px serif; fill: #d4a017; }
+    .piece-dim { font: 400 34px serif; fill: #30363d; }
+  </style>
+
+  <!-- fundo -->
+  <rect class="bg" width="900" height="220"/>
+
+  <!-- tabuleiro sutil à esquerda -->
+  <g opacity="0.9">
+    <rect class="sq-lite" x="0"   y="0"   width="55" height="55"/>
+    <rect class="sq-dark" x="55"  y="0"   width="55" height="55"/>
+    <rect class="sq-lite" x="110" y="0"   width="55" height="55"/>
+    <rect class="sq-dark" x="165" y="0"   width="55" height="55"/>
+    <rect class="sq-dark" x="0"   y="55"  width="55" height="55"/>
+    <rect class="sq-lite" x="55"  y="55"  width="55" height="55"/>
+    <rect class="sq-dark" x="110" y="55"  width="55" height="55"/>
+    <rect class="sq-lite" x="165" y="55"  width="55" height="55"/>
+    <rect class="sq-lite" x="0"   y="110" width="55" height="55"/>
+    <rect class="sq-dark" x="55"  y="110" width="55" height="55"/>
+    <rect class="sq-lite" x="110" y="110" width="55" height="55"/>
+    <rect class="sq-dark" x="165" y="110" width="55" height="55"/>
+    <rect class="sq-dark" x="0"   y="165" width="55" height="55"/>
+    <rect class="sq-lite" x="55"  y="165" width="55" height="55"/>
+    <rect class="sq-dark" x="110" y="165" width="55" height="55"/>
+    <rect class="sq-lite" x="165" y="165" width="55" height="55"/>
+  </g>
+
+  <!-- tabuleiro sutil à direita (espelhado) -->
+  <g opacity="0.9">
+    <rect class="sq-dark" x="680" y="0"   width="55" height="55"/>
+    <rect class="sq-lite" x="735" y="0"   width="55" height="55"/>
+    <rect class="sq-dark" x="790" y="0"   width="55" height="55"/>
+    <rect class="sq-lite" x="845" y="0"   width="55" height="55"/>
+    <rect class="sq-lite" x="680" y="55"  width="55" height="55"/>
+    <rect class="sq-dark" x="735" y="55"  width="55" height="55"/>
+    <rect class="sq-lite" x="790" y="55"  width="55" height="55"/>
+    <rect class="sq-dark" x="845" y="55"  width="55" height="55"/>
+    <rect class="sq-dark" x="680" y="110" width="55" height="55"/>
+    <rect class="sq-lite" x="735" y="110" width="55" height="55"/>
+    <rect class="sq-dark" x="790" y="110" width="55" height="55"/>
+    <rect class="sq-lite" x="845" y="110" width="55" height="55"/>
+    <rect class="sq-lite" x="680" y="165" width="55" height="55"/>
+    <rect class="sq-dark" x="735" y="165" width="55" height="55"/>
+    <rect class="sq-lite" x="790" y="165" width="55" height="55"/>
+    <rect class="sq-dark" x="845" y="165" width="55" height="55"/>
+  </g>
+
+  <!-- degradê para o centro (funde o tabuleiro no fundo) -->
+  <defs>
+    <linearGradient id="fadeL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0d1117" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0d1117" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <rect x="0"   y="0" width="240" height="220" fill="url(#fadeL)"/>
+  <rect x="660" y="0" width="240" height="220" fill="url(#fadeR)"/>
+
+  <!-- peças decorativas apagadas nos tabuleiros -->
+  <text class="piece-dim" x="70"  y="45">♜</text>
+  <text class="piece-dim" x="125" y="100">♞</text>
+  <text class="piece-dim" x="15"  y="155">♟</text>
+  <text class="piece-dim" x="805" y="45">♝</text>
+  <text class="piece-dim" x="750" y="155">♛</text>
+  <text class="piece-dim" x="858" y="210">♟</text>
+
+  <!-- peça central de destaque -->
+  <text class="piece" x="427" y="72" text-anchor="middle">♞</text>
+
+  <!-- linha de acento -->
+  <rect class="accent" x="330" y="90" width="240" height="2" rx="1"/>
+
+  <!-- NOME (troque aqui) -->
+  <text class="name" x="450" y="140" text-anchor="middle">GABRIEL CORTEZ</text>
+
+  <!-- SUBTÍTULO (troque aqui) -->
+  <text class="subtitle" x="450" y="172" text-anchor="middle">SOFTWARE ENGINEER · AUTOMATION · AI</text>
+
+  <!-- notação decorativa -->
+  <text class="subtitle" x="450" y="200" text-anchor="middle" opacity="0.5">1. e4  e5   2. Nf3  Nc6   3. Bb5</text>
+</svg>

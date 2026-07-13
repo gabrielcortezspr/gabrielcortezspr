@@ -1,0 +1,10 @@
+<svg width="900" height="40" viewBox="0 0 900 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Divisor de seção — troque a peça no <text> central se quiser variar (♟ ♞ ♝ ♜ ♛ ♚) -->
+  <style>
+    .line  { stroke: #30363d; stroke-width: 1; }
+    .piece { font: 400 22px serif; fill: #d4a017; }
+  </style>
+  <line class="line" x1="60"  y1="20" x2="415" y2="20"/>
+  <line class="line" x1="485" y1="20" x2="840" y2="20"/>
+  <text class="piece" x="450" y="28" text-anchor="middle">♞</text>
+</svg>

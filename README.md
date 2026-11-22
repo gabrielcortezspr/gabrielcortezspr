@@ -3,30 +3,28 @@
 
   <br>
 
-  <a href="https://gabrielcortezspr.vercel.app"><img src="https://img.shields.io/badge/site-gabrielcortezspr.vercel.app-141414?style=flat-square&logo=vercel&logoColor=f2f2f2" alt="Site" /></a>
+  <a href="https://gabrielcortezspr.vercel.app"><img src="https://img.shields.io/badge/▶_play_the_portfolio-gabrielcortezspr.vercel.app-141414?style=for-the-badge&labelColor=e0443a" alt="Play the portfolio at gabrielcortezspr.vercel.app" /></a>
 
-  <br>
+  <br><br>
 
-  <sub><a href="#-whoami">whoami</a> · <a href="#-ls-projects---featured">projects</a> · <a href="#-cat-stackboard">stack</a> · <a href="#-tail--f-currentlog">now</a> · <a href="#-ls-projects---all">more</a> · <a href="#-ping-gabriel">contact</a></sub>
+  <sub><a href="#player">player</a> · <a href="#projects">projects</a> · <a href="#skills">skills</a> · <a href="#career">career</a> · <a href="#trophies">trophies</a> · <a href="#contact">contact</a></sub>
 </div>
 
-### `$ whoami`
+<a name="player"></a>
 
-Software Engineer at **Samsung Electronics (Visual Display Division)** and Computer Engineering student at **UEA**. I build automation, AI-powered applications and data systems that support manufacturing and business operations.
+<div align="center">
+  <img src="assets/player.svg" width="100%" alt="Player card: Gabriel Cortez, Software Engineer (AI, Data) at Samsung Electronics Visual Display, co-founder of Kacto, building NarraTer, based in Manaus. B.Eng. Computer Engineering at UEA, 2022 to 2027. 9 olympiad medals, 1 championship, 3 clinics live on Kacto, teams in Brazil and Korea." />
+</div>
 
-Co-founder of **Kacto Services**, an AI startup focused on intelligent customer service automation.
+I build internal software and automation for TV production engineering at **Samsung Electronics**: real-time data pipelines, dashboards used by leadership in Brazil and Korea, RPA for legacy systems with no API, and ML on factory data. Taking ideas from requirements to deploy and adoption.
 
-```text
-$ cat expertise.txt
-[x] software engineering          [x] machine learning
-[x] ai & intelligent agents       [x] process automation (rpa)
-[x] data engineering & analytics  [x] full stack development
-[x] manufacturing analytics       [x] enterprise systems integration
-```
+Before that: QA for Samsung Galaxy devices at **Sidia**, FPGA research funded by **FAPEAM**, and co-founding **Kacto**, an AI customer-service startup.
 
 <div align="center">
   <img src="assets/divider.svg" width="100%" alt="" />
 </div>
+
+<a name="projects"></a>
 
 ### `$ ls ~/projects --featured`
 
@@ -44,10 +42,30 @@ $ cat expertise.txt
   <img src="assets/divider.svg" width="100%" alt="" />
 </div>
 
-### `$ cat stack.board`
+<a name="skills"></a>
 
 <div align="center">
-  <img src="assets/stack-board.svg" width="100%" alt="Tech stack: Python, TypeScript, JavaScript, Java, SQL, React, Next.js, FastAPI, Node.js, HTML/CSS, Pandas, NumPy, Scikit-Learn, OpenCV, ML, Selenium, Playwright, RPA, PostgreSQL, Git/Linux" />
+  <img src="assets/skills.svg" width="100%" alt="Skill tree. Data and automation (Python, SQL, Pandas, NumPy, Selenium, PyAutoGUI, OpenCV) used at Samsung and Fundação Muraki. AI and machine learning (LLMs, RAG, embeddings, agents, Scikit-Learn, YOLO, n8n) used at Kacto, NarraTer and Samsung. Back-end and apps (FastAPI, Flask, Node.js, TypeScript, React, Next.js, PostgreSQL, Rust and Tauri) used at Samsung, BusFlow and Pro-Link. Hardware and embedded (ESP32, FPGA and Verilog, MQTT, Arduino, Raspberry Pi, C/C++) used at BusFlow and FAPEAM/SENAI. Quality and evaluation (JUnit, Selenium, Postman, Cucumber, Android QA, Git and Linux) used at Sidia, Muraki and NarraTer." />
+</div>
+
+<div align="center">
+  <img src="assets/divider.svg" width="100%" alt="" />
+</div>
+
+<a name="career"></a>
+
+<div align="center">
+  <img src="assets/quests.svg" width="100%" alt="Career. Software Engineer at Samsung Electronics Visual Display Division, Feb 2026 to now. Co-founder and AI Developer at Kacto, Oct 2025 to Feb 2026. QA Intern at Sidia Institute, Feb 2025 to Feb 2026. Test Developer at Fundação Muraki, Sep to Dec 2024. Embedded Systems Researcher at FAPEAM and SENAI, Aug 2024 to Jul 2025. B.Eng. Computer Engineering at UEA, 2022 to 2027." />
+</div>
+
+<div align="center">
+  <img src="assets/divider.svg" width="100%" alt="" />
+</div>
+
+<a name="trophies"></a>
+
+<div align="center">
+  <img src="assets/achievements.svg" width="100%" alt="Achievements. Champion of the Pro-Link Challenge (CREA-AM, II CENATEC 2026), leading the winning team. State finalist at Liga Jovem 2025 with BusFlow. Speaker at Chip in the Jungle 2025. Science olympiads 2019 to 2021: gold at OBA (astronomy); international bronzes at AMO, SMO and Math Without Borders; silvers at ONC, OBEF and MOBFOG; bronzes at MOBFOG and OAQ; honorable mention at ONC." />
 </div>
 
 <div align="center">
@@ -57,22 +75,16 @@ $ cat expertise.txt
 ### `$ tail -f current.log`
 
 ```text
-[ai]      integrating enterprise systems with samsung gauss ai services
-[agents]  building intelligent agents for internal operations
-[rpa]     developing python automation for manufacturing processes
-[data]    production analytics · predictive modeling · data pipelines
-[web]     full stack applications — react · next.js · fastapi
-[kacto]   intelligent customer service automation @ kacto services
+[now]       software engineer @ samsung · visual display division
+[building]  narrater · agents from different vendors talking to each other
+[studying]  computer engineering @ uea · graduating 2027
+[learning]  rust + tauri · evaluating multi-agent systems
+[making]    shaders · suminagashi in glsl
+[open to]   automation, data and ai problems to build from scratch
 ```
 
-<div align="center">
-  <img src="assets/divider.svg" width="100%" alt="" />
-</div>
-
-### `$ ls ~/projects --all`
-
 <details>
-<summary><b>more repositories</b>, grouped by area</summary>
+<summary><b>$ ls ~/projects --all</b> &nbsp;·&nbsp; more repositories, grouped by area</summary>
 
 <br>
 
@@ -90,10 +102,10 @@ $ cat expertise.txt
 | Repo | What it is |
 |---|---|
 | [e2e-encryption-study](https://github.com/gabrielcortezspr/e2e-encryption-study) | End-to-end encrypted terminal chat in Node.js, built piece by piece to learn applied crypto |
-| [grpc](https://github.com/gabrielcortezspr/grpc) | Calculator service over gRPC in Python |
+| [grpc](https://github.com/gabrielcortezspr/grpc) | Stateless calculator service over gRPC in Python |
 | [Teste-de-desempenho-de-GPU-CPU-com-OpenGL](https://github.com/gabrielcortezspr/Teste-de-desempenho-de-GPU-CPU-com-OpenGL) | GPU/CPU performance test with OpenGL |
 | [Markov_Probability_Transitions](https://github.com/gabrielcortezspr/Markov_Probability_Transitions) | Markov chain simulations driven by a hand-written MLCG |
-| [Embarcados-Curso](https://github.com/gabrielcortezspr/Embarcados-Curso) | Beginner course on embedded systems with ESP32/Arduino |
+| [Embarcados-Curso](https://github.com/gabrielcortezspr/Embarcados-Curso) | Hands-on embedded systems course with ESP32/Arduino, up to IoT and MQTT |
 
 **web, games & coursework**
 
@@ -110,6 +122,8 @@ $ cat expertise.txt
 <div align="center">
   <img src="assets/divider.svg" width="100%" alt="" />
 </div>
+
+<a name="contact"></a>
 
 ### `$ ping gabriel`
 
